@@ -1,0 +1,135 @@
+.container{
+	width: 1200px;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 50px auto;
+	padding: 20px;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.anniu{
+	width: 170px;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.anniu button{
+	border: 0;
+	outline: none;
+    opacity: .8;
+    background-color: transparent;
+	cursor: pointer;
+}
+.anniu button:nth-child(1){
+	width: 19px;
+    height: 20px;
+    background-position: 0 -30px;
+    background-image: url(../images/player.png);
+}
+.anniu .play.paused{
+    background-position: -30px 0;
+}
+.anniu button:nth-child(2){
+	width: 21px;
+	height: 29px;
+	background-image: url(../images/player.png);
+}
+.anniu button:nth-child(3){
+	width: 19px;
+    height: 20px;
+    background-position: 0 -52px;
+    background-image: url(../images/player.png);
+}
+.process{
+	width: 720px;
+	height: 100%;
+	color: #cecece;
+	font-size: 12px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.process-top{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.process-bottom{
+	width: 100%;
+	height: 8px;
+	cursor: pointer;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+}
+.process-true{
+	width: 100%;
+	height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+.process-active{
+	width: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.circle{
+	display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url(../images/player.png);
+    background-position: 0 -170px;
+    opacity: 1;
+}
+.volume{
+	width: 115px;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.volume a{
+	display: block;
+	width: 26px;
+    height: 21px;
+    opacity: .8;
+    background-image: url(../images/player.png);
+    background-position: 0 -144px;
+}
+.volume .volume-btn.silence{
+    background-position: 0 -182px;
+}
+.volume-process{
+	width: 80px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+.volume-process-active{
+	width: 75%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	position: relative;
+}
+.volume-process-active i{
+	position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/player.png);
+    background-position: 0 -170px;
+    cursor: pointer;
+}
